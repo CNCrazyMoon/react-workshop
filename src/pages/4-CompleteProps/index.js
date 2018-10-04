@@ -42,8 +42,7 @@ const Page = props => (
 
     <p>
       Try adding an extra information to users (such as a nationality, or an
-      age) and render it the way you want. Pro tip: remember to add some prop
-      types validation!
+      age) and render it the way you want.
     </p>
 
     <Example live>
