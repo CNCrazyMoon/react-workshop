@@ -28,11 +28,25 @@ const Page = props => (
       <code>style</code> blocks injected in the <code>head</code> of the page.
     </p>
 
+    <p>
+      Note that in React when applying a class to a component we need to use{' '}
+      <code>className</code> as <code>class</code> is a reserved word in
+      JavaScript. It's one of the few{' '}
+      <a
+        href="https://reactjs.org/docs/dom-elements.html#differences-in-attributes"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        differences in attributes
+      </a>{' '}
+      between React and HTML
+    </p>
+
     <Code language="jsx">{`/* Button/index.js */
 import React from 'react'
 import './styles.css'
 
-const Button = (props) => (
+const Button = props => (
   <button type='button' className='button'>
     {props.children}
   </button>
@@ -64,7 +78,7 @@ export default Button`}</Code>
     <SectionTitle text="CSS preprocessors" />
 
     <p>
-      One thing about React and its componentized approach is that it makes
+      One thing about React and its componentised approach is that it makes
       preprocessors such as LESS or Sass slightly less useful. Indeed, styles do
       not have to operate in a single huge global namespace anymore and can be
       scoped within components’ reach.
@@ -73,7 +87,7 @@ export default Button`}</Code>
     <p>
       create-react-app provides{' '}
       <a
-        href="https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md#adding-a-css-preprocessor-sass-less-etc"
+        href="https://github.com/facebook/create-react-app/blob/master/packages/react-scripts/template/README.md#adding-a-sass-stylesheet"
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -91,7 +105,7 @@ export default Button`}</Code>
 
     <p>
       There are many different solutions to this, we’ll quickly cover what
-      appears to be the most popular solutions –
+      appears to be the most popular solutions –{' '}
       <a
         href="https://styled-components.com/"
         target="_blank"
@@ -106,10 +120,12 @@ export default Button`}</Code>
         rel="noopener noreferrer"
       >
         JSS
-      </a>, as well as our favourite –{' '}
+      </a>
+      , as well as our favourite –{' '}
       <a href="http://fela.js.org/" target="_blank" rel="noopener noreferrer">
         Fela
-      </a>.
+      </a>
+      .
     </p>
 
     <h3>JSS</h3>
@@ -123,7 +139,7 @@ export default Button`}</Code>
         POJO
       </abbr>{' '}
       as a way to define styles. In a React application, these styles would be
-      bound to a component with a Higher-Order function.
+      bound to a component with a higher-order function.
     </p>
 
     <p>
@@ -145,9 +161,15 @@ export default Button`}</Code>
 
     <p>
       styled-components is kind of the cool kid on the block when it comes to
-      CSS-in-JS solutions. Its very own particularity is that it relies on
-      tagged template literals to make it possible to author styles as plain
-      text.
+      CSS-in-JS solutions. Its very own particularity is that it relies on{' '}
+      <a
+        href="https://wesbos.com/tagged-template-literals/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        tagged template literals
+      </a>{' '}
+      to make it possible to author styles as plain text.
     </p>
 
     <p>
