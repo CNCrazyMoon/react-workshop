@@ -25,11 +25,11 @@ const Page = props => (
       much, really):
     </p>
 
-    <Code language="jsx">{`const MyFirstHOC = Component => {
+    <Code language="jsx">{`const MyFirstHOC = WrappedComponent => {
   const foo = 'bar'
 
   return props => {
-    return <Component {...props} foo={foo} />
+    return <WrappedComponent {...props} foo={foo} />
   }
 }`}</Code>
 
@@ -45,7 +45,7 @@ const Page = props => (
     <p>
       Write a higher-order function that provides the viewport width to the
       wrapped component as a <code>viewportWidth</code> prop. Do not forget to
-      remove the listeners when/if component unmounts! Help yourself with the{' '}
+      remove the listeners when the component unmounts! Help yourself with the{' '}
       <code>Trackable</code> component if you need.
     </p>
 
