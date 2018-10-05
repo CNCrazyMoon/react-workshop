@@ -10,7 +10,7 @@ import HelloYou from './HelloYou'
 
 const Page = () => (
   <div>
-    <PageTitle text="Stateful components" />
+    <PageTitle text="State" />
 
     <p>
       React components can have an internal state which is useful to maintain

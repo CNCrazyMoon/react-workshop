@@ -16,9 +16,9 @@ const Page = props => (
     </p>
 
     <p>
-      You can pass functions as <code>on*</code> props to React components (such
-      as <code>onClick</code>) so they get automatically called when these
-      events are being fired. Careful: case matters!
+      You can pass inline event listeners to React components (such as{' '}
+      <code>onClick</code>) so they get automatically called when these events
+      are being fired. Careful: React uses camelCase – unlike HTML!
     </p>
 
     <Code language="jsx">{`<button onClick={() => console.log('Clicked!')} type='button'>
@@ -45,7 +45,8 @@ const Page = props => (
         rel="noopener noreferrer"
       >
         when trying to access an event within a callback
-      </a>).
+      </a>
+      ).
     </p>
 
     <SectionTitle text="Exercise - Log key code while typing" />

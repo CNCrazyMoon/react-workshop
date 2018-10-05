@@ -38,11 +38,11 @@ const Page = props => (
       <UserIndex />
     </Example>
 
-    <SectionTitle text="Exercise B - Add another prop to users" />
+    <SectionTitle text="Exercise B - Add another property for each user" />
 
     <p>
       Try adding an extra information to users (such as a nationality, or an
-      age) and render it the way you want.
+      age) and render it on screen.
     </p>
 
     <Example live>
