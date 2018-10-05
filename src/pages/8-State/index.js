@@ -5,6 +5,7 @@ import SectionTitle from '../../components/SectionTitle'
 import Code from '../../components/Code'
 import Example from '../../components/Example'
 import MousePosition from './MousePosition'
+import Counter from './Counter'
 import HelloYou from './HelloYou'
 
 const Page = () => (
@@ -17,13 +18,15 @@ const Page = () => (
     </p>
 
     <p>
-      The state can be set through <code>this.setState(…)</code> (<a
+      The state can be set through <code>this.setState(…)</code> (
+      <a
         href="https://reactjs.org/docs/state-and-lifecycle.html#do-not-modify-state-directly"
         target="_blank"
         rel="noopener noreferrer"
       >
         never modify it directly
-      </a>). Then it can be read through <code>this.state</code> (containing an
+      </a>
+      ). Then it can be read through <code>this.state</code> (containing an
       object). It should be initialised in the class constructor, and updated
       anywhere but in the <code>render</code> method (since updating the state
       cause a re-render).
@@ -102,11 +105,23 @@ const Page = () => (
 
     <p>
       Display the live mouse position on the page. Get started with the code in{' '}
-      <code>MousePosition.js</code>
+      <code>MousePosition.js</code>.
     </p>
 
     <Example live>
       <MousePosition />
+    </Example>
+
+    <SectionTitle text="Exercise D - Build a counter (medium)" />
+
+    <p>
+      Extend this counter component to increment and decrement state – bonus
+      points for limiting the counter not to go below 0, or above a certain
+      amount, and representing this in the interface.
+    </p>
+
+    <Example live>
+      <Counter />
     </Example>
   </div>
 )

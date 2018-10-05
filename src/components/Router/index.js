@@ -8,7 +8,7 @@ import Children from '../../pages/5-Children'
 import Events from '../../pages/6-Events'
 import Lifecycle from '../../pages/7-Lifecycle'
 import State from '../../pages/8-State'
-import StateManagement from '../../pages/9-StateManagement'
+import Redux from '../../pages/9-Redux'
 import HigherOrder from '../../pages/10-HigherOrder'
 import Styling from '../../pages/11-Styling'
 import YourMove from '../../pages/12-YourMove'
@@ -25,7 +25,7 @@ const Router = () => (
     <Route path="/Events" component={Events} />
     <Route path="/Lifecycle" component={Lifecycle} />
     <Route path="/State" component={State} />
-    <Route path="/StateManagement" component={StateManagement} />
+    <Route path="/Redux" component={Redux} />
     <Route path="/HigherOrder" component={HigherOrder} />
     <Route path="/Styling" component={Styling} />
     <Route path="/YourMove" component={YourMove} />
